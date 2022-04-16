@@ -1,41 +1,8 @@
-import './categories.styles.scss';
+import Directory from './components/directory/directory.component';
 
 const App = () => {
-  const categories = [
-    {
-      title: 'Hats',
-      id: 1
-    },
-    {
-      title: 'Jackets',
-      id: 2
-    },
-    {
-      title: 'Sneakers',
-      id: 3
-    },
-    {
-      title: 'Womens',
-      id: 4
-    },
-    {
-      title: 'Mens',
-      id: 5
-    }
-  ]
-
   return (
-    <div className='categories-container'>
-      {categories.map(({title, id}) =>
-            <div key={id} className='category-container'>
-            <div className="background-image"/>
-            <div className='category-body-container'>
-              <h2>{title}</h2>
-              <p>Shop Now</p>
-            </div>
-          </div>
-        )}
-    </div>
+    <Directory />
   );
 };
 
